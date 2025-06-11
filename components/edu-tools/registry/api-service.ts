@@ -82,8 +82,8 @@ export async function callGenerationAPI(prompt: string): Promise<string> {
     // 准备API请求体
     const requestBody: GenTextRequest = {
       prompt,
-      provider: "deepseek", // 使用DeepSeek作为提供商
-      model: "deepseek-chat", // 使用deepseek-chat模型
+      provider: "huggingface", // 使用Hugging Face作为提供商
+      model: "google/gemma-7b", // 使用正确的Google Gemma 7B模型路径
     };
 
     // 发送请求到现有的gen-text端点
